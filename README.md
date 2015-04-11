@@ -2,6 +2,9 @@
 
 Custom Segue developed in Swift for transition between circular-shapped buttons and UIViewControllers
 
+![Example](https://www.dribba.com/external/QZCircleSegue/example.gif)
+
+
 **Installation**
 
 1) Drop the QZCircleSegue.swift file into your project 
