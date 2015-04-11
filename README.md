@@ -33,11 +33,16 @@ After having your desired Interface with your buttons and your View Controllers.
 
 **Transition Manager Settings**
 
-   animationDuration: Animation's duration in seconds (default 0.2s)
-   animationColor: Animation's main color (default white)
-   animationChild: Animation's origin button, that's the button from where the animation will take place
-   fromViewController: Origin
-   toViewController: Destination
+   	animationDuration: Animation's duration in seconds (default 0.2s)
+   
+   	animationColor: Animation's main color (default white)
+   
+   	animationChild: Animation's origin button, that's the button from where the animation will take place
+   
+   	fromViewController: Origin
+   
+   	toViewController: Destination
+   
     
 
 
