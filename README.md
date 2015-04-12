@@ -1,6 +1,6 @@
 # QZCircleSegue
 
-Custom Segue developed in Swift for transition between circular-shapped buttons and UIViewControllers
+Custom Segue developed in Swift for transition between circular-shaped buttons and UIViewControllers
 
 ![Example](https://www.dribba.com/external/QZCircleSegue/example.gif)
 
