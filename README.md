@@ -41,17 +41,17 @@ Once everything is configured on your Storyboard file, you'll need to setup your
 
 1. Create and configure a `QZCircleSegue` instance to fit your settings.
 
-    ...
-    var transition = QZCircleSegue()
-    ...
-    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
-        let destinationViewController = segue.destinationViewController as! NewViewController
-        self.transition.animationChild = buttonOne
-        self.transition.animationColor = UIColor.redColor()
-        self.transition.fromViewController = self
-        self.transition.toViewController = destinationViewController
-        destinationViewController.transitioningDelegate = transition
-	}
+		...
+    		var transition = QZCircleSegue()
+    		...
+    		override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
+        		let destinationViewController = segue.destinationViewController as! NewViewController
+        		self.transition.animationChild = buttonOne
+        		self.transition.animationColor = UIColor.redColor()
+        		self.transition.fromViewController = self
+        		self.transition.toViewController = destinationViewController
+        		destinationViewController.transitioningDelegate = transition
+			}
 2. *Optional* Check the DEMO APP to see how to configure different settings for different buttons.
 
 
