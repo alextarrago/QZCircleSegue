@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>ADD04980-288A-4A3B-9CDB-4612692B8EA7</string>
+	<key>IDESourceControlProjectName</key>
+	<string>QZCircleSegue</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>68FFADF7262B3E4DBCAC34A87BD7F89A2C6F3625</key>
+		<string>https://github.com/alextarrago/QZCircleSegue.git</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>QZCircleSegue.xcodeproj</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>68FFADF7262B3E4DBCAC34A87BD7F89A2C6F3625</key>
+		<string>../..</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>https://github.com/alextarrago/QZCircleSegue.git</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>111</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>68FFADF7262B3E4DBCAC34A87BD7F89A2C6F3625</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>68FFADF7262B3E4DBCAC34A87BD7F89A2C6F3625</string>
+			<key>IDESourceControlWCCName</key>
+			<string>QZCircleSegue</string>
+		</dict>
+	</array>
+</dict>
+</plist>

@@ -2,6 +2,7 @@
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7531" systemVersion="14D131" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="61n-E4-v17">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7520"/>
+        <capability name="Alignment constraints with different attributes" minToolsVersion="5.1"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
@@ -118,12 +119,12 @@
                                 <exclude reference="fuh-PO-fHm"/>
                             </mask>
                             <mask key="constraints">
+                                <exclude reference="nfd-ob-Boc"/>
                                 <exclude reference="2vd-Ez-HQ3"/>
                                 <exclude reference="AJC-26-alD"/>
                                 <exclude reference="Hn6-oi-05M"/>
                                 <exclude reference="TOb-5i-nX8"/>
                                 <exclude reference="m3g-wX-o6f"/>
-                                <exclude reference="nfd-ob-Boc"/>
                             </mask>
                         </variation>
                         <variation key="heightClass=regular-widthClass=compact">
@@ -133,12 +134,12 @@
                                 <include reference="fuh-PO-fHm"/>
                             </mask>
                             <mask key="constraints">
+                                <include reference="nfd-ob-Boc"/>
                                 <include reference="2vd-Ez-HQ3"/>
                                 <include reference="AJC-26-alD"/>
                                 <include reference="Hn6-oi-05M"/>
                                 <include reference="TOb-5i-nX8"/>
                                 <include reference="m3g-wX-o6f"/>
-                                <include reference="nfd-ob-Boc"/>
                             </mask>
                         </variation>
                     </view>
@@ -162,6 +163,7 @@
                         <viewControllerLayoutGuide type="bottom" id="7Xj-hX-3Ab"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="O6I-V5-p9P">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xmB-19-21r">
@@ -235,6 +237,7 @@
                         <viewControllerLayoutGuide type="bottom" id="7Gt-57-HCe"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="7fK-Nv-iTi">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="oVT-Gf-RQk">
@@ -308,6 +311,7 @@
                         <viewControllerLayoutGuide type="bottom" id="afk-bC-HvG"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="W3s-VB-flf">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7wJ-d2-NCP">

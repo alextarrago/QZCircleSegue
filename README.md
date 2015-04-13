@@ -1,32 +1,60 @@
-# QZCircleSegue
+#QZCircleSegue
 
-Custom Segue developed in Swift for transition between circular-shapped buttons and UIViewControllers
+QZCircleSegue is written in Swift and it is a beatiful transition between circular-shapped buttons and your ViewController.
+With just a few super-simple steps you can setup your settings according to your app.
 
-**Installation**
+What it does?
 
-1) Drop the QZCircleSegue.swift file into your project 
+![Example](https://www.dribba.com/external/QZCircleSegue/example.gif)
 
-**How to use it**
+##Requirements and Dependencies
+- Swift Language (>= 1.2)
+- iOS >= 8.0
 
-After having your desired Interface with your buttons and your View Controllers...
+##Installation
 
-1) Connect the Button to your destination View Controller and set it as 'Present Modally' (set a name to the segue if desired)
+####Manual install:
+- Copy `QZCircleSegue.swift` into your project.
 
-![Connect to the EXIT Segue](https://www.dribba.com/external/QZCircleSegue/connect.jpg "Connect to the EXIT Segue")
+##Usage
 
-2) Add the following method to your origin's View Controller
+### Setting everything up on your Storyboard
 
-	@IBAction func unwindToMainViewController (sender: UIStoryboardSegue){
-   		self.dismissViewControllerAnimated(true, completion: nil)
-	}
+Pre. Have a Storyboard file with buttons and controllers
 
-3) Connect the back button on your destination's View Controller to the EXIT segue
+1. Create an Action Segue from your UIButton to your View Controller. Set it as a `'Present Modally'` segue and set an `Identifier`*(if needed)*.
 
-![Connect to the EXIT Segue](https://www.dribba.com/external/QZCircleSegue/exit.jpg "Connect to the EXIT Segue")
+![](https://www.dribba.com/external/QZCircleSegue/connect.jpg)
 
-4) Configure the transition manager attributes as shown on the Demo app
+2. On your `Origin View Controller` *(where your buttons are placed in)* add the following method.
+	
+    		@IBAction func unwindToMainViewController (sender: UIStoryboardSegue){
+   				self.dismissViewControllerAnimated(true, completion: nil)
+			}
+3. Connect a Back element to the `Exit Segue` as shown in the image.
 
-5) Done!
+![](https://www.dribba.com/external/QZCircleSegue/exit.jpg)
+
+### Setting everything up on your origin's Controller
+
+Once everything is configured on your Storyboard file, you'll need to setup your `QZCircleSegue` instance in your origin's Controller.
+
+1. Create and configure a `QZCircleSegue` instance to fit your settings.
+
+    		...
+    		var transition = QZCircleSegue()
+    		...
+			override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
+        		let destinationViewController = segue.destinationViewController as! NewViewController
+        		self.transition.animationChild = buttonOne
+        		self.transition.animationColor = UIColor.redColor()
+        		self.transition.fromViewController = self
+        		self.transition.toViewController = destinationViewController
+        		destinationViewController.transitioningDelegate = transition
+			}
+2. *Optional* Check the DEMO APP to see how to configure different settings for different buttons.
 
 
+## License
 
+Licensed under MIT. A copy can be found inside this folder.
