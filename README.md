@@ -37,6 +37,7 @@ Pre. Have a Storyboard file with buttons and controllers
 ### Setting everything up on your origin's Controller
 
 Once everything is configured on your Storyboard file, you'll need to setup your `QZCircleSegue` instance in your origin's Controller.
+
 1. Create and configure a `QZCircleSegue` instance to fit your settings.
 
     ...
