@@ -44,7 +44,7 @@ Once everything is configured on your Storyboard file, you'll need to setup your
     		...
     		var transition = QZCircleSegue()
     		...
-		override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
+			override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
         		let destinationViewController = segue.destinationViewController as! NewViewController
         		self.transition.animationChild = buttonOne
         		self.transition.animationColor = UIColor.redColor()
