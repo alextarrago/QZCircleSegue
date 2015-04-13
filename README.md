@@ -27,11 +27,10 @@ Pre. Have a Storyboard file with buttons and controllers
 ![](https://www.dribba.com/external/QZCircleSegue/connect.jpg)
 
 2. On your `Origin View Controller` *(where your buttons are placed in)* add the following method.
-	`@IBAction func unwindToMainViewController (sender: UIStoryboardSegue){
-
-   		self.dismissViewControllerAnimated(true, completion: nil)
-   		
-	}`
+	
+    		`@IBAction func unwindToMainViewController (sender: UIStoryboardSegue){
+   			self.dismissViewControllerAnimated(true, completion: nil)
+		}`
 3. Connect a Back element to the `Exit Segue` as shown in the image.
 
 ![](https://www.dribba.com/external/QZCircleSegue/exit.jpg)
