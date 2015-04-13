@@ -29,7 +29,7 @@ Pre. Have a Storyboard file with buttons and controllers
 2. On your `Origin View Controller` *(where your buttons are placed in)* add the following method.
 	
     		@IBAction func unwindToMainViewController (sender: UIStoryboardSegue){
-   			self.dismissViewControllerAnimated(true, completion: nil)
+   				self.dismissViewControllerAnimated(true, completion: nil)
 			}
 3. Connect a Back element to the `Exit Segue` as shown in the image.
 
