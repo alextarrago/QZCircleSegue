@@ -18,10 +18,11 @@ class QZCircleSegue: NSObject, UIViewControllerAnimatedTransitioning, UIViewCont
     var toViewController: AnyObject! = nil
     
     func animateTransition(transitionContext: UIViewControllerContextTransitioning) {
-        var animationSize = animationChild.frame.size
-        var animationPoint = animationChild.center
+        let animationSize = animationChild.frame.size
+        let animationPoint = animationChild.center
         
         let container = transitionContext.containerView()
+        
         
         let screens : (from:UIViewController, to:UIViewController) = (transitionContext.viewControllerForKey(UITransitionContextFromViewControllerKey)!, transitionContext.viewControllerForKey(UITransitionContextToViewControllerKey)!)
         
@@ -35,13 +36,13 @@ class QZCircleSegue: NSObject, UIViewControllerAnimatedTransitioning, UIViewCont
             self.offStageMenuController(newViewController, fromViewController: bottomViewController)
         }
         
-        container.addSubview(bottomView)
-        container.addSubview(newView)
+        container!.addSubview(bottomView)
+        container!.addSubview(newView)
         
         let duration = self.transitionDuration(transitionContext)
         
         if (self.presenting) {
-            var circularView = UIView()
+            let circularView = UIView()
             circularView.frame.size = CGSize(width: animationSize.width, height: animationSize.height)
             circularView.backgroundColor = self.animationColor
             circularView.center = animationPoint
@@ -52,11 +53,12 @@ class QZCircleSegue: NSObject, UIViewControllerAnimatedTransitioning, UIViewCont
             bottomViewController.view.addSubview(circularView)
             
             UIView.animateWithDuration(0.3, animations: { () -> Void in
-                let scale:CGFloat = 12
+                let scale:CGFloat = 12;
                 circularView.transform = CGAffineTransformMakeScale(scale, scale)
                 circularView.center = animationPoint
                 }) { (Finished) -> Void in
-                    UIView.animateWithDuration(duration, delay: 0.0, usingSpringWithDamping: 1, initialSpringVelocity: 1, options: nil, animations: {
+                    UIView.animateWithDuration(duration,
+                        delay: 0.0, usingSpringWithDamping: 1, initialSpringVelocity: 1, options: UIViewAnimationOptions.AllowUserInteraction, animations: {
                         self.onStageMenuController(newViewController, fromViewController: bottomViewController)
                         }, completion: { finished in
                             transitionContext.completeTransition(true)
@@ -64,11 +66,11 @@ class QZCircleSegue: NSObject, UIViewControllerAnimatedTransitioning, UIViewCont
                     })
             }
         } else {
-            var circularView: UIView = bottomViewController.view.viewWithTag(764)!
+            let circularView: UIView = bottomViewController.view.viewWithTag(764)!
             self.offStageMenuController(newViewController, fromViewController: bottomViewController)
             
             UIView.animateWithDuration(0.3, animations: { () -> Void in
-                let scale:CGFloat = -12
+                let scale:CGFloat = -12;
                 circularView.transform = CGAffineTransformMakeScale(1, 1)
                 circularView.center = animationPoint
                 }) { (Finished) -> Void in
@@ -87,7 +89,7 @@ class QZCircleSegue: NSObject, UIViewControllerAnimatedTransitioning, UIViewCont
     func onStageMenuController(menuViewController: UIViewController, fromViewController: UIViewController){
         menuViewController.view.alpha = 1
     }
-    func transitionDuration(transitionContext: UIViewControllerContextTransitioning) -> NSTimeInterval {
+    func transitionDuration(transitionContext: UIViewControllerContextTransitioning?) -> NSTimeInterval {
         return animationDuration
     }
     func animationControllerForPresentedController(presented: UIViewController, presentingController presenting: UIViewController, sourceController source: UIViewController) -> UIViewControllerAnimatedTransitioning? {
