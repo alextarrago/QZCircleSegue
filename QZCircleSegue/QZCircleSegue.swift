@@ -22,7 +22,8 @@ class QZCircleSegue: NSObject, UIViewControllerAnimatedTransitioning, UIViewCont
         let animationPoint = animationChild.center
         
         let container = transitionContext.containerView()
-        
+        let screenComp = (UIScreen.mainScreen().bounds.size.height - animationSize.height) / (animationSize.height / 2);
+
         
         let screens : (from:UIViewController, to:UIViewController) = (transitionContext.viewControllerForKey(UITransitionContextFromViewControllerKey)!, transitionContext.viewControllerForKey(UITransitionContextToViewControllerKey)!)
         
@@ -53,7 +54,7 @@ class QZCircleSegue: NSObject, UIViewControllerAnimatedTransitioning, UIViewCont
             bottomViewController.view.addSubview(circularView)
             
             UIView.animateWithDuration(0.3, animations: { () -> Void in
-                let scale:CGFloat = 12;
+                let scale:CGFloat = screenComp;
                 circularView.transform = CGAffineTransformMakeScale(scale, scale)
                 circularView.center = animationPoint
                 }) { (Finished) -> Void in
@@ -70,7 +71,7 @@ class QZCircleSegue: NSObject, UIViewControllerAnimatedTransitioning, UIViewCont
             self.offStageMenuController(newViewController, fromViewController: bottomViewController)
             
             UIView.animateWithDuration(0.3, animations: { () -> Void in
-                let scale:CGFloat = -12;
+                let scale:CGFloat = -screenComp;
                 circularView.transform = CGAffineTransformMakeScale(1, 1)
                 circularView.center = animationPoint
                 }) { (Finished) -> Void in
