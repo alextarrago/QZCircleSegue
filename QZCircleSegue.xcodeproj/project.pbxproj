@@ -170,6 +170,7 @@
 		FFC7BF7A1AD92B060096E5D1 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				LastSwiftUpdateCheck = 0700;
 				LastUpgradeCheck = 0630;
 				ORGANIZATIONNAME = "Dribba Development & Consulting";
 				TargetAttributes = {
@@ -425,6 +426,7 @@
 				FFC7BFA31AD92B060096E5D1 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		FFC7BFA41AD92B060096E5D1 /* Build configuration list for PBXNativeTarget "QZCircleSegueTests" */ = {
 			isa = XCConfigurationList;
@@ -433,6 +435,7 @@
 				FFC7BFA61AD92B060096E5D1 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
