@@ -1,6 +1,6 @@
 #QZCircleSegue
 
-QZCircleSegue is written in Swift and it is a beatiful transition between circular-shapped buttons and your ViewController.
+QZCircleSegue is written in Swift and it is a beautiful transition between circular-shapped buttons and your ViewController.
 With just a few super-simple steps you can setup your settings according to your app.
 
 What it does?
