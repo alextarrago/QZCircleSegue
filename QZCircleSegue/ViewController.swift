@@ -53,11 +53,8 @@ class ViewController: UIViewController {
         toViewController.transitioningDelegate = transition
     }
     
-    /* REQUIRED, do not connect to any Outlet.
-       BUG DETECTED? Exit segue doesn't dismiss automatically, so we have to dismiss it manually.
-    */
-    @IBAction func unwindToMainViewController (sender: UIStoryboardSegue){
-        self.dismissViewControllerAnimated(true, completion: nil)
+    /* Specify the destination view controller to enable the unwind segue*/
+    @IBAction func unwindToMainViewController(sender: UIStoryboardSegue){
     }
 }
 
