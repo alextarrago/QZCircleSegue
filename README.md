@@ -1,4 +1,4 @@
-#QZCircleSegue
+# QZCircleSegue
 
 QZCircleSegue is written in Swift and it is a beautiful transition between circular-shapped buttons and your ViewController.
 With just a few super-simple steps you can setup your settings according to your app.
@@ -7,16 +7,16 @@ What it does?
 
 ![Example](https://www.dribba.com/external/QZCircleSegue/example.gif)
 
-##Requirements and Dependencies
+## Requirements and Dependencies
 - Swift Language (>= 1.2)
 - iOS >= 8.0
 
-##Installation
+## Installation
 
-####Manual install:
+#### Manual install:
 - Copy `QZCircleSegue.swift` into your project.
 
-##Usage
+## Usage
 
 ### Setting everything up on your Storyboard
 
